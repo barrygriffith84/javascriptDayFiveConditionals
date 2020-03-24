@@ -105,7 +105,20 @@ if (person.language === "English") {
 // If none of the above are true, log "Have a cookie anyway!" to the console.
 // Try changing the values of your variables. You should get different results every time you change them.
 
+var time = "10:00 AM";
+var isHungry = "false";
 
+if (time === "7:30 AM" && isHungry === true) {
+    console.log("Time for breakfast!")
+} else if (time === "12:00 PM" && isHungry === true) {
+    console.log("Time for lunch!")
+} else if (time === "7:00 PM" && isHungry === true || time === "8:00 PM" && isHungry === true) {
+    console.log("Time for dinner!")
+} else if (isHungry === true) {
+    console.log("Time for a snack!")
+} else{
+    console.log("Have a cookie anyway!")
+} 
 
 
 // 6. Student Grades
@@ -117,6 +130,19 @@ if (person.language === "English") {
 // If it's between 84 and 92, log "You got a B" to the console.
 // If it's between 93 and 100, log "You got an A" to the console.
 
+var grade = 100;
+
+if (grade >= 0 && grade <= 69) {
+    console.log("You got an F!")
+} else if (grade >= 70 && grade <= 76) {
+    console.log("You got a D!")
+} else if (grade >= 77 && grade <= 84) {
+    console.log("You got a C!")
+} else if (grade >= 85 && grade <= 92) {
+    console.log("You got a B!")
+} else if (grade >= 93 && grade <= 100) {
+    console.log("You got an A!")
+}
 
 // Challenge
 // Use the weather data from the challenge at the bottom of the the variables and data types chapter.
