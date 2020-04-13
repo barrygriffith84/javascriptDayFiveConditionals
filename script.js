@@ -303,7 +303,7 @@ var weatherData = {
    }
 
 
-   if(weatherData.query.results.channel.item.forecast[0].high > 85 && weatherData.query.results.channel.item.forecast[1].high > 85 && weatherData.query.results.channel.item.forecast[2].high < 85){
+   if(weatherData.query.results.channel.item.forecast[0].high > 85 && weatherData.query.results.channel.item.forecast[1].high > 85 && weatherData.query.results.channel.item.forecast[2].high > 85){
        console.log("It's going to be hot as heck all week!")
    }else if(weatherData.query.results.channel.item.forecast[0].high < 40 && weatherData.query.results.channel.item.forecast[1].high < 40 && weatherData.query.results.channel.item.forecast[2].high < 40){
     console.log("It's going to be cold as heck all week!")
